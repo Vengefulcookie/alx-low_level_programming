@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - this is the main function
+ * main - C program that prints exactly the wanted line
  *
  * Return: always 0
  */
