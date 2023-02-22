@@ -10,8 +10,8 @@
 int _abs(int r)
 {
 	if (r < 0)
-		r = -('r');
+		r = -(r);
 	else if (r >= 0)
-		r = ('r');
+		r = r;
 	return (r);
 }
