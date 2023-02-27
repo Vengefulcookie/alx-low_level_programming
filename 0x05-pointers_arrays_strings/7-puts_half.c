@@ -13,31 +13,19 @@
 
 void puts_half(char *str)
 {
-	int m;
-	int n;
-	int i;
+	int i = 0;
+	int n = 0;
 
-	m = 0;
+	while (str[i] != '\0');
+		i += 1;
+	n = i / 2;
 
-	while
-	(str[m] != '\0');
+	if (i % 2 == 1)
+		n += 1;
+	while (str[n] != '\0')
 	{
-		m++;
-	}
-
-	if (m % 2 == 0)
-	{
-		for (i = m / 2; str[i] != '\0'; i++)
-		{
-			putchar(str[i]);
-		}
-	}
-	else if (m % 2)
-	{
-		for (n = (m - 1) / 2; n < m - 1; i++)
-		{
-			putchar(str[n + 1]);
-		}
+		putchar(*(str + n));
+		n++;
 	}
 	putchar('\n');
 }
