@@ -6,7 +6,6 @@
  * @a: integer to be checked
  * @b: integer to be checked
  *
- * Return: always 0
  */
 
 void swap_int(int *a, int *b)
