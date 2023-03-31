@@ -1,12 +1,12 @@
 #include "lists.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
  * list_len - returns the number of elements
  * in a linked list_t list
  *
  * @h: to be checked
- * @m: to be checked
  *
  * Return: number of elements
  */
