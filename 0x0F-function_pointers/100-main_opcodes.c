@@ -33,11 +33,10 @@ int main(int argc, char *argv[])
 		exit(2);
 	}
 
-
 	for (i = 0; i < bytes; i++)
 	{
 		opcode = *(unsigned char *)adrs;
-		printf("%02x", opcode);
+		printf("%.2x", opcode);
 
 		if (i == bytes - 1)
 			continue;
