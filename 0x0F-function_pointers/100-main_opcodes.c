@@ -16,13 +16,13 @@
 int main(int argc, char *argv[])
 {
 	int bytes, i;
-	char *arr;
+	int (*adrs)(int, char **) = main;
 	unsigned char opcode;
 
 	if (argc != 2)
 	{
 		printf("error\n");
-		exit (1);
+		return (1);
 	}
 
 	bytes = atoi(argv[1]);
@@ -30,21 +30,20 @@ int main(int argc, char *argv[])
 	if (bytes < 0)
 	{
 		printf("error\n");
-		exit (2);
+		return (2);
 	}
 
-	arr = (char *)main;
 
 	for (i = 0; i < bytes; i++)
 	{
-		opcode = *(unsigned char *)arr;
+		opcode = *(unsigned char *)adrs;
 		printf("%02x", opcode);
 
 		if (i == (bytes - 1))
 			continue;
 		printf(" ");
 
-		arr++;
+		adrs++;
 	}
 
 	printf("\n");
