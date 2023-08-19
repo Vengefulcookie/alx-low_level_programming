@@ -39,7 +39,7 @@ int main(int argc, char *argv[])
 		opcode = *(unsigned char *)adrs;
 		printf("%02x", opcode);
 
-		if (i == (bytes - 1))
+		if (i == bytes - 1)
 			continue;
 		printf(" ");
 
