@@ -4,6 +4,7 @@
  * before_main -  function that prints before the main
  * function is executed
  *
+ * Return: void
  */
 
 void before_main(void)
