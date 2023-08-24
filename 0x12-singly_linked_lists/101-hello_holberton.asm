@@ -1,15 +1,13 @@
 	Section  .data
-		hello db "Hello, Holberton", 0
-		format db "%s", 10, 0
+		hello db "Hello, Holberton\n", 0
 
 	Section  .text
 		extern printf
 		global main
 
 	Main:
-		sub rsp 8
-		mov rdi, format
-		mov rsi, hello
+		mov edi, format
+		xor eax, eax
 		call printf
-		add rsp, 8
+		mov eax, 0
 		ret
