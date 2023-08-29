@@ -20,5 +20,5 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 		placeh = placeh->next;
 		m++;
 	}
-	return (placeh ? placeh : NULL) ;
+	return (placeh ? placeh : NULL);
 }
