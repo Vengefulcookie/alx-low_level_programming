@@ -14,7 +14,7 @@ int pop_listint(listint_t **head)
 	listint_t *placeh;
 	int abc123;
 
-	if (head == NULL)
+	if (!head || !*head)
 	{
 		return (0);
 	}
